@@ -1,0 +1,96 @@
+/* .card {
+    margin: 20px;
+    background-color: #ffffff;
+    color: #0808aa;
+    border: 1px solid #CCCCCC;
+    border-radius: 8px;
+    padding: 16px;
+    width: auto;
+    height: auto;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.En{
+    color: #0808aa;
+}
+
+.Ja{
+    color: #ff0000;
+} */
+
+body{
+    background-color: #63c8ff;
+}
+
+.home{
+    text-align-last: justify;
+    width: 97%;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+
+.HOME:link , .HOME:visited{
+    color:#000000;
+    text-decoration:none;
+    text-align: center;
+}
+
+.back:link , .back:visited , .progress:link , .progress:visited{
+    color:#ff0000;
+    text-decoration:none;
+    font-size:30px;
+}
+
+
+
+.card-container {
+    perspective: 5000px;
+    width: 400px;
+    height: 200px;
+} 
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+    color: #0808aa;
+    border-radius: 8px;
+}
+
+.card-container.flipped .card {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2em;
+    background: rgb(203, 226, 252);
+    border-radius: 15px;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background: #ffcccc;
+    color: #ff0000;
+}
+
+.front {
+    color: #0808aa;
+}

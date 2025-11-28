@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>単語帳アプリ</title>
+    <link rel="stylesheet" href="card_style.css"/>
+    <link rel="manifest" href="manifest.json"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="card-container" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+            <div class="front">Apple</div>
+            <div class="back">りんご</div>
+        </div>
+    </div>
+
+    <!-- <div class="card-container" onclick="this.classList.toggle('flipped')">
+        <div class="card">
+            <h3 class="En">apple</h3>
+            <p class="Ja"> りんご</p>
+        </div>
+    </div> -->
+    
+    
+    <div class="home">
+        <a class="back" href=""><<<</a>
+        <a class="HOME" href="index.html">HOME</a>
+        <a class="progress" href="">>>></a>
+    </div>
+
+    <div class="nav">
+        <a href="#" class="prev_nav">＜＜</a>
+        <a href="index.html">HOME</a>
+        <a href="#" class="next_nav">＞＞</a>
+    </div>
+
+    <script src="card.js"></script>
+
+    <small>ver1.02</small>
+
+</body>
+</html>

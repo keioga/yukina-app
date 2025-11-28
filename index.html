@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>単語帳アプリ</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="manifest" href="manifest.json"/>
+</head>
+<body>
+    <h1 class="text">📘単語帳アプリ</h1>
+
+    <div class="set-word">
+        <h2 class="text">単語登録</h2>
+        <input type="text" id="english" placeholder="英単語（例：apple）"/><br>
+        <input type="text" id="japanese" placeholder="日本語訳（例：りんご）"/><br>
+        <button onclick="addWord()">登録</button>
+        <p id="result"></p>
+    </div>
+
+    <div class="learn-word">
+        <h2 class="text">単語学習</h2>
+            <p id="wordnum">登録単語数　：　</p>
+            <p id="learn-word">学習回数　　：　</p>
+        <div class="tocard">
+            <a href="card.html">単語カード</a>
+        </div>
+    </div>
+    
+    <ul id="wordList"></ul>
+    <button onclick="cleardeta()">初期化</button>
+
+    <script src="app.js"></script>
+    <small>ver1.02</small>
+
+    
+
+</body>
+</html>
