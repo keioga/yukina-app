@@ -50,7 +50,7 @@ function saveWords() {
 
 window.onload = function() {
     flashcards = JSON.parse(localStorage.getItem('flashcards'));
-    wordnum = JSON.parse(localStorage.getItem('wordnum'));
+    wordnum = JSON.parse(localStorage.getItem('wordnum')) || 0;
 
     document.getElementById('wordnum').innerText = '登録単語数　：　' + wordnum;
 };
